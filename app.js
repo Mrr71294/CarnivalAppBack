@@ -5,7 +5,7 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const database = require('./config/mongoose.js');
+const database = require('./config/mongoose');
 
 //Routes////////////////////////////////////////////////////////////////////////
 const index = require('./routes/index');
