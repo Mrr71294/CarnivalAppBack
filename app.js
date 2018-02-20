@@ -9,6 +9,7 @@ const database = require('./config/mongoose');
 
 //Routes////////////////////////////////////////////////////////////////////////
 const ship = require('./routes/ship');
+const cabin = require('./routes/cabin');
 const users = require('./routes/users');
 
 const app = express();
@@ -23,6 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/ship', ship);
+app.use('/api/cabin', cabin);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
